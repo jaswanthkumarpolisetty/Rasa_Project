@@ -1,0 +1,52 @@
+version: "3.1"
+
+intents:
+  - greet
+  - how_are_you
+  - affirm
+  - ask_how_are_you
+  - deny
+  - ask_for_recommend_book
+  - ask_for_book_name
+  - ask_for_book_details
+  - ask_for_characters
+  - ask_for_store
+  - say_thanks
+  - say_bye
+
+responses:
+  utter_greet:
+    - text: "నమస్తే! మీరు ఎలా ఉన్నారు?"
+
+  utter_how_are_you:
+    - text: "నేను బాగున్నా."
+
+  utter_good:
+    - text: "బాగుంది, ఇంకా ఏమిటి?"
+
+  utter_repeat:
+    - text: "ఆ మరింతగా అర్ధం కాలేదు. దయచేసి పునః పేరుకోండి."
+
+  utter_ask_for_recommend_book:
+    - text: "ఒక మంచి రహస్య కథానుసంకేత బుక్ ఉంది."
+
+  utter_ask_for_book_name:
+    - text: "జేన్ డో రాసిన ది సైలెంట్ విట్నెస్ బుక్."
+
+  utter_ask_for_book_details:
+    - text: "ఈ బుక్ కోస్టల్ టౌన్లో జరిగిన ఒక హత్య గురించి ఉంది. డిటెక్టివ్ సారా ఇన్వెస్టిగేటర్ ఆన్ధులో ఉన్నారు."
+
+  utter_ask_for_characters:
+    - text: "ఖచ్చితంగా! డిటెక్టివ్ సారా ఒక తెలివైన ఇన్వెస్టిగేటర్. ఇంకా మిగతా పాత్రలు అన్ని మంచిగా ఉన్నాయి."
+
+  utter_ask_for_store:
+    - text: "స్థానిక బుక్ స్టోర్ లో లేదా ఆన్లైన్లో కూడా అందుబాటులో ఉంది, అమెజాన్ మరియు ఇతర ఆన్లైన్ వద్దన్నీ."
+
+  utter_say_thanks:
+    - text: "మీకు ధన్యవాదాలు! బుక్ ఆనందించండి. మరింత ప్రశ్నలు ఉంటే అడగండి."
+
+  utter_say_bye:
+    - text: "బువాయ్! టాటా"
+# మిమ్మల్ని పరిచయం లేదు. నా ప్రశ్నకు ఉత్తరం ఇవ్వండి.
+  utter_unrecognized:
+    - text: "ఒక మంచి రహస్య కథానుసంకేత బుక్ ఉంది."

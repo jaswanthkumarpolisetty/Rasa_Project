@@ -1,0 +1,59 @@
+version: "3.1"
+
+stories:
+  - story: Greet and Ask How Are You
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: how_are_you
+      - action: utter_how_are_you
+
+  - story: Respond to Affirmation
+    steps:
+      - intent: affirm
+      - action: utter_good
+
+  - story: Respond to Asking How You Are
+    steps:
+      - intent: ask_how_are_you
+      - action: utter_how_are_you
+
+  - story: Handle Incorrect Input
+    steps:
+      - intent: deny
+      - action: utter_repeat
+
+  - story: User Asks for a Book Recommendation
+    steps:
+      - intent: ask_for_recommend_book
+      - action: utter_ask_for_recommend_book
+
+  - story: User Asks for Book Name
+    steps:
+      - intent: ask_for_book_name
+      - action: utter_ask_for_book_name
+
+  - story: User Asks for Book Details
+    steps:
+      - intent: ask_for_book_details
+      - action: utter_ask_for_book_details
+
+  - story: User Asks for Characters
+    steps:
+      - intent: ask_for_characters
+      - action: utter_ask_for_characters
+
+  - story: User Asks for Store
+    steps:
+      - intent: ask_for_store
+      - action: utter_ask_for_store
+
+  - story: User Says Thanks
+    steps:
+      - intent: say_thanks
+      - action: utter_say_thanks
+
+  - story: User Says Bye
+    steps:
+      - intent: say_bye
+      - action: utter_say_bye

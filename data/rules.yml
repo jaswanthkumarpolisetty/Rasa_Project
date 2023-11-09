@@ -1,0 +1,69 @@
+version: "3.1"
+
+rules:
+  - rule: Respond to Greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to How Are You
+    steps:
+      - intent: how_are_you
+      - action: utter_how_are_you
+
+  - rule: Respond to Affirmation
+    steps:
+      - intent: affirm
+      - action: utter_good
+
+  - rule: Respond to Asking How You Are
+    steps:
+      - intent: ask_how_are_you
+      - action: utter_how_are_you
+
+  - rule: Respond to Denial
+    steps:
+      - intent: deny
+      - action: utter_repeat
+
+  - rule: User Asks for Book Recommendation
+    steps:
+      - intent: ask_for_recommend_book
+      - action: utter_ask_for_recommend_book
+
+  - rule: User Asks for Book Name
+    steps:
+      - intent: ask_for_book_name
+      - action: utter_ask_for_book_name
+
+  - rule: User Asks for Book Details
+    steps:
+      - intent: ask_for_book_details
+      - action: utter_ask_for_book_details
+
+  - rule: User Asks for Characters
+    steps:
+      - intent: ask_for_characters
+      - action: utter_ask_for_characters
+
+  - rule: User Asks for Store
+    steps:
+      - intent: ask_for_store
+      - action: utter_ask_for_store
+
+  - rule: User Says Thanks
+    steps:
+      - intent: say_thanks
+      - action: utter_say_thanks
+
+  - rule: User Says Bye
+    steps:
+      - intent: say_bye
+      - action: utter_say_bye
+      
+  -rule: Handle Unrecognized Input
+    condition:
+      - active_loop: null
+    steps:
+      - action: utter_unrecognized
+  
